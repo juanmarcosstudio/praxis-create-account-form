@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- External font for the logo (or any similar font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Norse&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left section with background image and overlay -->
+        <div class="left-side">
+            <div class="overlay">
+                <img src="images/praxis-logo.png" alt="Odin logo" class="logo-image">
+                <h1 class="logo">PRAXIS</h1>
+            </div>
+            <p class="credit">Photo by Halie West on Unsplash</p>
+        </div>
+
+        <!-- Right section for form input -->
+        <div class="right-side">
+          <p class="description">Welcome to Praxis! Create an account to access exclusive tools, resources, and updates, all designed to help you <em>bring your web development projects</em> to life.</p><br>
+            <p><strong>You know you want to.</strong></p><br>
+            <h2>Let’s do this!</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <span class="error" id="password-error">* Passwords do not match</span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <button type="submit" class="create-account-btn">Create Account</button>
+                <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

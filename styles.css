@@ -1,0 +1,159 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Container and layout */
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Left section with background and overlay */
+.left-side {
+  background-image: url('images/background.jpg'); /* Update this path as needed */
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-image {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-family: 'Norse', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Right section for form input */
+.right-side {
+  width: 50%;
+  padding: 40px;
+  background-color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  display: none;
+}
+
+/* Enhanced style for the Create Account button */
+.create-account-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  color: white;
+  background-color: #596D48; /* Matching background color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.create-account-btn:hover {
+  background-color: #4a5b3d; /* Slightly darker shade for hover effect */
+  transform: scale(1.02); /* Subtle scaling effect */
+}
+
+.create-account-btn:active {
+  transform: scale(0.98); /* Slightly smaller on click for feedback */
+  background-color: #3e4d32; /* Even darker shade for active state */
+}
+
+.create-account-btn:focus {
+  outline: 2px solid #8fa68e; /* Add focus outline for accessibility */
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #596D48;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
